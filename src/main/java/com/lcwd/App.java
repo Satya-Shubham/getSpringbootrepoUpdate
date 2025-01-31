@@ -22,14 +22,14 @@ public class App
     {
         System.out.println( "App is ready for testing" );
 
-//        ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
-//        System.out.println(context);
-//    CartService Cartservice1=context.getBean("Cartservice1",CartService.class);
-//        Cartservice1.onecart();
-//        OrderService OrderService1=context.getBean(OrderService.class);
-//        OrderService1.order();
-//       CartService order1= context.getBean("order1", CartService.class);
-//       order1.onecart();
+        ApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
+        System.out.println(context);
+    CartService Cartservice1=context.getBean("Cartservice1",CartService.class);
+        Cartservice1.onecart();
+        OrderService OrderService1=context.getBean(OrderService.class);
+        OrderService1.order();
+       CartService order1= context.getBean("order1", CartService.class);
+       order1.onecart();
 
 
     }
